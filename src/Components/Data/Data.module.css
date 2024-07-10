@@ -1,0 +1,267 @@
+.section{
+    margin-top: -5px;
+    background-color: rgba(0, 0, 0, 0.984);
+}
+
+
+.content{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgba(56, 53, 53, 0.838);
+    background-color: #FFFFFF26;
+    border-radius: 25px;
+    padding: 25px;
+    width: fit-content;
+    
+}
+
+.containerText{
+    margin: 20px;
+    color: rgba(255, 255, 255, 0.902);
+    display: flex;
+    flex-direction: column;
+}
+
+.drop{
+    height: 25px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.containerText h3{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.902);
+}
+
+.containerText p{
+    font-size: 13px;
+    color: #fffc;
+}
+
+.containerText span{
+    height: 32px;
+    padding: 8px 12px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 1000px;
+    border: .5px solid rgba(255, 255, 255, .05);
+    background: rgba(255, 255, 255, .07);
+    color: #fffc;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: max-content;
+    cursor: pointer;
+}
+
+.containerText span img{
+    width: 16px;
+    height: 17px;
+}
+
+.headerimg{
+    width: 158px;
+    height: 168px;
+    border: 2px solid rgba(87, 84, 84, 0.584);
+    object-fit: cover;
+    border-radius: 12px;
+    
+}
+
+
+.dataAreafull{
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+    position: relative;
+
+}
+
+
+.dataArea{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+    position: relative;
+
+}
+
+@keyframes dash {
+    to {
+      stroke-dashoffset: 96;
+    }
+  }
+  
+  path {
+    stroke-dasharray: 8 8;
+    stroke-dashoffset: 0;
+    animation: dash 1s linear infinite;
+  }
+
+
+.contentArea{
+    width: 100%;
+}
+
+
+
+.catimg{
+    width: 158px;
+    height: 168px;
+    border: 2px solid rgba(87, 84, 84, 0.841);
+    object-fit: cover;
+    border-radius: 22px;
+    
+}
+
+.secondContent{
+    background-color: transparent;
+    padding: 25px;
+    
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.518);
+    gap: 10px;
+}
+
+.text span{
+    border: 1px solid rgb(55, 53, 53);
+    border-radius: 8px;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.lockArea{
+    margin-top: -30px;
+    margin-left: 130px;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    border-radius: 1000px;
+    border: 1px solid var(--White-20, rgba(255, 255, 255, .2));
+    background: #4a4a4a;
+}
+
+
+.lockimg{
+    height: 25px;
+    width: 30px;
+    margin-left: -5px;
+}
+
+.tickArea{
+    margin-bottom: 30px;
+    margin-left: 50px;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    border-radius: 1000px;
+    border: 1px solid var(--White-20, rgba(255, 255, 255, .2));
+    background: #222222;
+}
+
+
+.tickimg{
+    height: 25px;
+    width: 30px;
+    margin-left: -5px;
+}
+  
+  @media screen and (max-width: 1000px) {
+
+    .section{
+        margin-top: -5px;
+
+    }
+
+    .content {
+       margin-top: 100px;
+       padding: 0px;
+       margin-left: 43px;
+       display: flex;
+       flex-direction: column;
+
+    }
+
+      
+    .dataArea {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .dash{
+        display: none;
+    }
+  
+    .containerText span {
+      margin-top: 10px; /* Adjusted margin for spacing */
+    }
+
+    .containerText h3 {
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.902);
+      }
+      
+      .containerText p {
+        font-size: 13px;
+        color: #fffc;
+        margin-top: 10px; /* Added margin for spacing */
+      }
+      
+      .containerText span {
+        margin-left: 47px;
+    
+      }
+  
+    .headerimg{
+        height: 100px;
+        width: 120px;
+        margin-left: 65px;
+
+    } 
+
+    .drop{
+        margin-left: 100px;
+    }
+    
+    .tickArea{
+        display: none;
+    }
+
+
+
+    
+    .catimg {
+        height: 100px;
+        margin-left: 55px;
+        width: 120px;
+    }
+  
+    .secondContent {
+     margin-right: 15px;
+     margin-top: 50px;
+    }
+  
+    .text span {
+      width: 100%; /* Full width for span */
+    }
+  }
+  

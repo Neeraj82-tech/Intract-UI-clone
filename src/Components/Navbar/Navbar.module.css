@@ -1,0 +1,165 @@
+ .container {
+    overflow: hidden;
+    position: sticky;
+    z-index: 2;
+    background-color: #000000e8;
+    color: white;
+    top: 0;
+    width: 100%;
+    gap: 35px;
+    height: 64px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    backdrop-filter: blur(5px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  }
+  
+  .title {
+    padding-left: 15px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .toggleButton{
+    display: none;
+  }
+  
+  .menus {
+    position: relative;
+    align-items: center;
+    display: flex;
+    columns: row;
+    gap: 35px;
+    list-style: none;
+    cursor: pointer;
+  }
+  
+  .menus a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .search {
+    display: flex;
+    border-radius: 1000px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.07);
+    height: 42.5px;
+    padding: 10px 16px;
+    align-items: center;
+    flex: 1;
+    gap: 0.5rem;
+    position: relative;
+  }
+  
+  .search img {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .search input {
+    flex: 1;
+    background: none;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    border: none;
+  }
+  
+  .broadcastIcon {
+    width: 42.5px;
+    height: 42.5px;
+    backdrop-filter: blur(12px);
+    background: rgba(60, 32, 140, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fa8922;
+    border-radius: 100%;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .button {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    padding-right: 15px;
+  }
+  
+  .signin {
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 15%;
+    text-align: center;
+  }
+
+  
+  @media screen and (max-width: 1000px) {
+    
+    .container {
+      height: auto; 
+      flex-direction: row; 
+      justify-content: space-between;
+    }
+
+    .title{
+        margin-left: 50px;
+    }
+  
+    .menu1 {
+      position: absolute;
+      z-index: 3;
+      display: block;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .toggleButton {
+            display: block;
+            cursor: pointer;
+        }
+
+
+    .search{
+        display: none;
+    }
+
+    .broadcastIcon{
+        display: none;
+    }
+
+  
+    .menus{
+        display: none;
+        flex-direction: column;
+        gap: 13px;
+        background: rgb(8, 8, 26);
+        background: linear-gradient(0deg, rgba(25,55,109,0.2) 0%, rgb(89, 92, 97) 100%);
+        box-shadow:  0 0 4px 0 rgba(0,0,0,0.25);
+    }
+ 
+  
+    .button {
+      flex-direction: column;
+      align-items: flex-end; 
+      padding: 10px; 
+    }
+
+    .open{
+        display: flex;
+        z-index: 999;
+        color: white;
+        position: absolute;
+    }
+
+ 
+  }
+  
+

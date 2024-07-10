@@ -1,0 +1,116 @@
+
+
+ .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .container img {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .content {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: screen;
+    transition: top 0.8s ease;
+    top: 42%;
+    z-index: 1;
+  }
+  
+  .companylogo {
+    mix-blend-mode: screen;
+    width: 235px;
+    transition: top 0.5s ease;
+    z-index: 1;
+  }
+  
+  .description p {
+    mix-blend-mode: lighter;
+    color: var(--White-40, rgba(255, 255, 255, 0.4));
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 22px;
+  }
+  
+  .description span {
+    color: var(--White-80, rgba(255, 255, 255, 0.8));
+  }
+  
+  .button {
+    display: inline-flex;
+    padding: 10px 45px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--White-10, rgba(255, 255, 255, 0.1));
+    background: var(--Cyber-Purple, #6435e9);
+    mix-blend-mode: normal;
+    margin-top: 40px;
+    opacity: 1;
+    animation: 2s ease;
+  }
+  
+  .buttonContent {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .buttonContent img {
+    display: block;
+    width: 16px;
+    height: 13px;
+  }
+  
+  .buttonContent span {
+    color: var(--White-100, #fff);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  
+
+  
+  @media screen and (max-width: 1000px) {
+    .content {
+      top: 50%; 
+    }
+  
+    .companylogo {
+      margin-top: 80px;
+    }
+  
+    .description p {
+      font-size: 10px; 
+      line-height: 20px; 
+     
+    }
+
+  
+    .button {
+      padding: 5px 10px; 
+      margin-top: 30px; 
+    }
+  
+    .buttonContent span {
+      font-size: 10px; 
+      line-height: 18px; 
+    }
+  }
+  
